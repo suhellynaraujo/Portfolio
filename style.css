@@ -5,6 +5,7 @@
     color: #FBEAFF;
     font-family: 'Poppins', sans-serif;    
     font-weight: bold;
+    
 }
 
 ul{
@@ -18,14 +19,11 @@ a{
 }
 
 body{
-    height: 100vh;
+    height: 150vh;
     background-image: url(/vortex.jpg) ;
     background-repeat: no-repeat;
-    background-position: center ;
+    background-position: center center ;
     background-size: cover;
-    
-   
-
     /* background-image: linear-gradient(to right top, #6845A1, #9659b3, #ad5389); */
 }
 
@@ -113,18 +111,17 @@ header ul li a:hover{
 }
 
 #cards{
+  
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    margin: 30px;
+    margin: 10px;
 }
 
-#carads div{
-    flex-basis: 100%;
-}
 #cards img{
-    max-width: 200px
+    max-width: 200px;
+    margin-top: 10px;
 }
 .form{
     width: 40%;
@@ -168,6 +165,7 @@ button:hover{
 }
 
 @media only screen and (max-width: 768px){
+  
    
     .form{
         width: 80%;
@@ -175,7 +173,8 @@ button:hover{
     
 #cards{
     display: flex;
-   flex-wrap: wrap;  
+   flex-wrap: wrap;
+   justify-content: center;  
 }
 
 .sites{
@@ -185,6 +184,7 @@ button:hover{
 }
 
 @media only screen and (max-width: 480px){
+    
     .container .name h1 {
         font-size: 30px
     }
@@ -200,6 +200,7 @@ button:hover{
 
 }
 @media only screen and (max-width: 375px){
+    
     header{
 
         display: flex;
@@ -211,6 +212,7 @@ button:hover{
 }
 
 @media only screen and (max-width: 375px){
+   
     header{
         padding: 2px;
         display: flex;
@@ -218,10 +220,13 @@ button:hover{
         
     }
     
-a{
+    a{
     font-size: 12px;
-}
+    }
 
+    .form form h2{
+        font-size: 16px;
+    }
 
 
 }
